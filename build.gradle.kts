@@ -16,6 +16,10 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
 
+    implementation("io.ktor:ktor-client-core:2.2.3") // 최신 2.x 버전
+    implementation("io.ktor:ktor-client-cio:2.2.3")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
     implementation("org.springframework.boot:spring-boot-starter")
 
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
