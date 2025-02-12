@@ -14,15 +14,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement
 import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit.jupiter.SpringExtension
 import org.springframework.transaction.PlatformTransactionManager
-import org.springframework.transaction.annotation.Propagation
-import org.springframework.transaction.annotation.Transactional
 import org.springframework.transaction.support.TransactionSynchronizationManager
 import kotlin.test.Test
 import kotlin.test.assertTrue
 import org.springframework.transaction.support.AbstractPlatformTransactionManager
 import org.springframework.transaction.support.DefaultTransactionStatus
 import kotlin.test.assertFalse
-import kotlin.test.assertNotEquals
 
 @ExtendWith(SpringExtension::class)
 @ContextConfiguration(classes = [TestConfig::class])

@@ -27,8 +27,11 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 //    implementation("org.springframework.boot:spring-boot-starter-data-jpa") // JPA를 사용할 경우
+
+    implementation("org.springframework.boot:spring-boot-starter-cache")
     implementation("org.springframework:spring-tx") // 트랜잭션 관리만 사용할 경우
 }
+
 
 tasks.test {
     useJUnitPlatform()
