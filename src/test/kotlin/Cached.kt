@@ -33,6 +33,7 @@ class CacheUserTest {
         assertEquals("Hello, User 123!", result2)
     }
 
+    // caching 처리가 진행된다면, counter는 내부 함수를 타지 않을것이기 떄문에 1로 고정이 된다.
     @Test
     fun `cache should call function only once for the same key`() {
         var counter = 0
