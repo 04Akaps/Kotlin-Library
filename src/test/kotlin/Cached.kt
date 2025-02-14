@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cache.annotation.EnableCaching
 import org.springframework.test.context.TestPropertySource
-import cacheAble.Cacheable
+import kotlin.library.cacheAble.Cacheable
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.cache.CacheManager
 import org.springframework.cache.concurrent.ConcurrentMapCacheManager

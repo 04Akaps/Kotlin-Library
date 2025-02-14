@@ -1,4 +1,4 @@
-package mongo
+package kotlin.library.mongo
 
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable

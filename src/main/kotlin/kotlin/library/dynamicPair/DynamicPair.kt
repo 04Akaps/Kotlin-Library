@@ -1,4 +1,4 @@
-package dynamicPair
+package kotlin.library.dynamicPair
 
 data class Fourth<out A, out B, out C, out D>(
     val first: A,

@@ -1,5 +1,5 @@
 
-import logging.Logging
+import kotlin.library.logging.Logging
 import org.junit.jupiter.api.Test
 import org.slf4j.Logger
 import org.springframework.stereotype.Service

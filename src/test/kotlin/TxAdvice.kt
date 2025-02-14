@@ -1,4 +1,4 @@
-import advice.TxAdvice
+import kotlin.library.advice.TxAdvice
 import org.junit.jupiter.api.assertThrows
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired

@@ -1,10 +1,10 @@
 plugins {
     kotlin("jvm") version "1.8.0"
     kotlin("plugin.serialization") version "1.8.0"
-    id("maven-publish")
+    `maven-publish`
 }
 
-group = "com.test"
+group = "com.kotlin.library"
 version = "1.0.3"
 
 repositories {
@@ -24,26 +24,18 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 }
 
 kotlin {
     jvmToolchain(17)
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenJava") {
-            from(components["java"])
-            groupId = "com.test"
-            artifactId = "test-library"
-            version = "1.0.3"
-        }
-    }
-    repositories {
-        maven {
-            url = uri("file://${project.buildDir}/maven-repo")
-        }
-    }
 }
